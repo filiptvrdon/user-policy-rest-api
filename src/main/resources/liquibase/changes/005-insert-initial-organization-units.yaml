@@ -1,0 +1,15 @@
+databaseChangeLog:
+  - changeSet:
+      id: insert-organization-units_sw_development
+      author: ftvrdon
+      changes:
+        - sql: |
+            INSERT INTO organization_units (id, name)
+            VALUES (uuid_generate_v4(), 'Software Development');
+  - changeSet:
+      id: insert-organization-units-support
+      author: ftvrdon
+      changes:
+        - sql: |
+            INSERT INTO organization_units (id, name)
+            VALUES (uuid_generate_v4(), 'Support');

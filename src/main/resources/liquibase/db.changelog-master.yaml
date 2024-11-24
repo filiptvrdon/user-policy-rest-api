@@ -8,3 +8,9 @@ databaseChangeLog:
   - include:
       relativeToChangelogFile: true
       file: changes/003-users-2-organization-units.yaml
+  - include:
+      relativeToChangelogFile: true
+      file: changes/004-create-uuid4-ext.yaml
+  - include:
+      relativeToChangelogFile: true
+      file: changes/005-insert-initial-organization-units.yaml

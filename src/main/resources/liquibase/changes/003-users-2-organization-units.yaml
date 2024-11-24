@@ -1,7 +1,7 @@
 databaseChangeLog:
   - changeSet:
       id: create-users_2_organization_units-table
-      author: your_name
+      author: ftvrdon
       changes:
         createTable:
           tableName: users_2_organization_units
@@ -12,7 +12,7 @@ databaseChangeLog:
                 constraints:
                   nullable: false
             - column:
-                name: organization_unit_idw
+                name: organization_unit_id
                 type: UUID
                 constraints:
                   nullable: false
