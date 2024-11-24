@@ -1,20 +1,22 @@
 package com.example.demo.service;
 
+import com.example.demo.dto.user.UserDto;
 import com.example.demo.model.user.User;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.UUID;
 
 @Service
 public interface UserService {
 
-    User createUser(User user);
+    User createUser(UserDto user);
 
-    User getUserById(Long id);
+    User getUserById(UUID id);
 
-    User updateUser(Long id, User user);
+    User updateUser(UUID id, User user);
 
-    void deleteUser(Long id);
+    void deleteUser(UUID id);
 
     List<User> getAllUsers();
 }
