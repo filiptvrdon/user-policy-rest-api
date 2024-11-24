@@ -1,0 +1,10 @@
+databaseChangeLog:
+  - include:
+      relativeToChangelogFile: true
+      file: changes/001-create-table-users.yaml
+  - include:
+      relativeToChangelogFile: true
+      file: changes/002-organization-units.yaml
+  - include:
+      relativeToChangelogFile: true
+      file: changes/003-users-2-organization-units.yaml

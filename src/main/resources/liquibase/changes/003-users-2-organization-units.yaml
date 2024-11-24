@@ -1,0 +1,22 @@
+databaseChangeLog:
+  - changeSet:
+      id: create-users_2_organization_units-table
+      author: your_name
+      changes:
+        createTable:
+          tableName: users_2_organization_units
+          columns:
+            - column:
+                name: user_id
+                type: UUID
+                constraints:
+                  nullable: false
+            - column:
+                name: organization_unit_idw
+                type: UUID
+                constraints:
+                  nullable: false
+          primaryKey:
+            columns:
+              - user_id
+              - organization_unit_id

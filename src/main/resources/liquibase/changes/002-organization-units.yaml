@@ -1,0 +1,17 @@
+databaseChangeLog:
+  - changeSet:
+      id: create-organization_units-table
+      author: ftvrdon
+      changes:
+        createTable:
+          tableName: organization_units
+          columns:
+            - column:
+                name: id
+                type: UUID
+                constraints:
+                  primaryKey: true
+                  nullable: false
+            - column:
+                name: name
+                type: VARCHAR(255)
