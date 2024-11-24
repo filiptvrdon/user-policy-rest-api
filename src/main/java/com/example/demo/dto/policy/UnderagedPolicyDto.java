@@ -4,7 +4,6 @@ import com.example.demo.dto.rule.IntegerRule;
 import lombok.Data;
 
 @Data
-public class YoungerThanPolicyDto extends BasePolicyDto {
-
+public class UnderagedPolicyDto extends BasePolicyDto {
     IntegerRule youngerThan;
 }
