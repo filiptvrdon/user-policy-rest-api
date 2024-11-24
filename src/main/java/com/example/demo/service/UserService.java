@@ -19,4 +19,6 @@ public interface UserService {
     void deleteUser(UUID id);
 
     List<User> getAllUsers();
+
+    User assignPolicyToUser(UUID userId, String policyId);
 }

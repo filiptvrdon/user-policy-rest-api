@@ -1,0 +1,22 @@
+databaseChangeLog:
+  - changeSet:
+      id: create-users_2_policies-table
+      author: ftvrdon
+      changes:
+        createTable:
+          tableName: users_2_policies
+          columns:
+            - column:
+                name: user_id
+                type: UUID
+                constraints:
+                  nullable: false
+            - column:
+                name: policy_id
+                type: TEXT
+                constraints:
+                  nullable: false
+          primaryKey:
+            columns:
+              - user_id
+              - policy_id

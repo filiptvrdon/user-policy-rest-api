@@ -14,3 +14,12 @@ databaseChangeLog:
   - include:
       relativeToChangelogFile: true
       file: changes/005-insert-initial-organization-units.yaml
+  - include:
+      relativeToChangelogFile: true
+      file: changes/006-create-policy-table.yaml
+  - include:
+      relativeToChangelogFile: true
+      file: changes/007-insert-policies.yaml
+  - include:
+      relativeToChangelogFile: true
+      file: changes/008-create-users_2_policies-table.yaml

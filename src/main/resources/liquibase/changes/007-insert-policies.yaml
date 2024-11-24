@@ -1,0 +1,50 @@
+databaseChangeLog:
+  - changeSet:
+      id: insert-initial-policies
+      author: ftvrdon
+      changes:
+        - insert:
+            tableName: policies
+            columns:
+              - column:
+                  name: id
+                  value: underaged
+              - column:
+                  name: name
+                  value: Underaged User
+              - column:
+                  name: rule_name
+                  value: youngerThan
+              - column:
+                  name: rule_value
+                  value: 18
+        - insert:
+            tableName: policies
+            columns:
+              - column:
+                  name: id
+                  value: internal-user
+              - column:
+                  name: name
+                  value: Internal User
+              - column:
+                  name: rule_name
+                  value: emailDomainIs
+              - column:
+                  name: rule_value
+                  value: evolveum.com
+        - insert:
+            tableName: policies
+            columns:
+              - column:
+                  name: id
+                  value: developer-full-access
+              - column:
+                  name: name
+                  value: Developer (Full Access)
+              - column:
+                  name: rule_name
+                  value: isMemberOf
+              - column:
+                  name: rule_value
+                  value: Software Development

@@ -1,0 +1,25 @@
+databaseChangeLog:
+  - changeSet:
+      id: create-policies-table
+      author: ftvrdon
+      changes:
+        createTable:
+          tableName: policies
+          columns:
+            - column:
+                name: id
+                type: TEXT
+                constraints:
+                  primaryKey: true
+                  nullable: false
+            - column:
+                name: name
+                type: TEXT
+                constraints:
+                  nullable: false
+            - column:
+                name: rule_name
+                type: TEXT
+            - column:
+                name: rule_value
+                type: TEXT
